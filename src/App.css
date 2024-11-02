@@ -1,38 +1,174 @@
-.App {
+* {
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.left-section {
+  flex: 1;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle, #316CEC 0%, transparent 0%), 
+    radial-gradient(circle, #4479EC 10%, #4479EC 30%, transparent 20%), 
+    radial-gradient(circle, #306BEC 20%, #306BEC 43%, transparent 30%), 
+    radial-gradient(circle, #2563EB 30%, #2563EB 70%, transparent 40%), 
+    radial-gradient(circle, #2563EB 40%, #2563EB 100%, transparent 100%);
+  z-index: -1;
+  color: white;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.right-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.right-section h2 {
+  font-weight: bold;
+}
+
+.logo {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.dashboard-preview {
+  margin: 80px 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.dashboard {
+  position: relative;
+  top: 60px;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  border-radius: 8px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.activity,
+.chart {
+  width: 100px;
+  height: 80px;
+}
+
+.welcome-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.subtext {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.login-form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 1rem;
+  width: 100%;
+  max-width: 300px;
+}
+
+.input-field {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+}
+
+.forgot-password {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.sign-in-btn {
+  background-color: #007bff;
   color: white;
+  border: none;
+  padding: 0.7rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.social-login {
+  text-align: center;
+  margin-top: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.social-btn {
+  margin: 0.5rem;
+  padding: 0.2rem 4rem 0.6rem 0.5rem;
+  border-radius: 8px;
+  border: 1px solid rgb(223, 228, 255);
+  color: rgb(1, 1, 1);
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.facebook-logo {
+  position: relative;
+  top: 5px;
+  width: 25px;
+  height: auto;
+  margin-left: 8px;
+  margin-right: 2px;
+}
+
+.google-logo {
+  position: relative;
+  top: 5px;
+  width: 25px;
+  height: auto;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+.google {
+  background-color: #fbfbfb;
+}
+
+.facebook {
+  background-color: #ffffff;
+}
+
+.sign-up {
+  margin-top: 1rem;
+  font-size: 0.9rem;
 }
