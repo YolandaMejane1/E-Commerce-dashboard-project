@@ -3,6 +3,7 @@ import "./App.css";
 import dashboard from "./assets/dashboard.png";
 import facebookLogo from "./assets/Facebook_Logo_Primary.png";
 import googleLogo from "./assets/web_light_rd_na@2x.png";
+import MenuSidebar from "./components/MenuSidebar";
 
 function App() {
   

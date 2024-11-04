@@ -1,6 +1,6 @@
 import React from 'react'
 
-function menu-sidebar() {
+function KPI() {
   return (
     <div>
       
@@ -8,4 +8,4 @@ function menu-sidebar() {
   )
 }
 
-export default menu-sidebar
+export default KPI
