@@ -25,7 +25,7 @@ const ProductList = () => {
                 {ProductData.map((product) => (
                   <tr key={product.id}>
                     <td><input type="checkbox" /></td>
-                    <td><img src={product.icon } alt={product.name} /> {product.name}</td>
+                    <td><img src={product.icon } alt={product.icon} /> {product.icon}</td>
                     <td>{product.brand}</td>
                     <td>{product.stock}</td>
                     <td>{product.sales}</td>
