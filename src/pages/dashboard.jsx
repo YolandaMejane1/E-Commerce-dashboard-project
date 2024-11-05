@@ -11,6 +11,7 @@ function Dashboard() {
   return (
     <div className="dashboard-container">
       <Header />
+      <MenuSidebar />
       <main className="dashboard-content">
 
         <section className="overall-revenue-section">

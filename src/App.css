@@ -267,27 +267,6 @@ padding-top: 2%;
   flex: 70%;
 }
 
-h2 {
-position: absolute;
-left: 26.56%;
-right: 1.9%;
-top: 1%;
-bottom: 0%;
-border-bottom-style: solid;
-
-font-family: Inter, sans-serif;
-font-style: normal;
-font-weight: 700;
-font-size: 23.2px;
-line-height: 125%;
-/* identical to box height, or 29px */
-letter-spacing: -0.29px;
-
-/* Greyscale/900 */
-color: #0F172A;
-
-}
-
 
 .header{
   padding-left: 10%;

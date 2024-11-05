@@ -6,7 +6,7 @@ import facebookLogo from "./assets/Facebook_Logo_Primary.png";
 import googleLogo from "./assets/web_light_rd_na@2x.png";
 import Dashboard from './pages/dashboard.jsx';
 import { FaBolt } from 'react-icons/fa';
-import MenuSidebar from "./components/MenuSidebar.jsx";
+
 
 
 function App() {
@@ -35,7 +35,6 @@ const LoginPage = () => {
         <p className="subtext text-lg">Everything you need to manage your online store</p>
       </div>
       
-      {/* Right section: visible on all screens, left section hidden on small screens */}
       <div className="right-section flex flex-column justify-center align-items-center p-8 bg-white">
         <h2 className="text-2xl font-bold">Sign In to your Account</h2>
         <p>Welcome back! Please enter your details.</p>
