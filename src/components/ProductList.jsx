@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react';
 import { ProductData } from './ProductData';
 
@@ -49,3 +50,14 @@ const ProductList = () => {
 export default ProductList;
 
 
+=======
+import React from 'react'
+
+function ProductList() {
+  return (
+    <div>ProductList</div>
+  )
+}
+
+export default ProductList
+>>>>>>> 21c9e8e568cea707032ef13dd6acc0dad71d2bdb

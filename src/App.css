@@ -156,7 +156,7 @@ html, body {
 
 .facebook-logo {
   position: relative;
-  top: 5px;
+  top: 0px;
   width: 25px;
   height: auto;
   margin-left: 8px;
@@ -165,7 +165,7 @@ html, body {
 
 .google-logo {
   position: relative;
-  top: 5px;
+  top: 0px;
   width: 25px;
   height: auto;
   margin-left: 2px;
@@ -210,6 +210,8 @@ html, body {
 .products-and-transactions {
   display: flex;
   gap: 20px; 
+  width: 100%;
+  height: auto;
 }
 
 .revenue-chart-section,
@@ -220,8 +222,11 @@ html, body {
   padding: 20px;
   border: 1px solid #ccc; 
   border-radius: 5px; 
-  background-color: #f9f9f9; 
+  background-color: #f9f9f9;
+  width: 100%; 
+  height: auto;
 }
+
 
 .App {
   display: flex;

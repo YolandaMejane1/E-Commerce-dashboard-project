@@ -74,3 +74,8 @@
   .text-danger {
     color: red; 
   }
+
+  .highlight {
+    border: 2px solid #2196F3; 
+    background-color: rgba(33, 150, 243, 0.1); 
+  }

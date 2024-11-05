@@ -10,10 +10,17 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const Header = () => {
   const [searchQuery, setSearchQuery] = useState('');
 
-  const handleSearch = (event) => {
-    event.preventDefault();
-    console.log('Search Query:', searchQuery); 
-  };
+  const cards = [
+    { title: "Monthly Sales", value: "$1,200", trend: "increase", icon: <GiShoppingCart style={{ color: '#f6a723', fontSize: '1.5rem' }} /> },
+    { title: "Total Revenue", value: "$15,000", trend: "decrease", icon: <FaDollarSign style={{ color: '#2563eb', fontSize: '1.5rem' }} /> },
+    { title: "Returns", value: "$200", trend: "decrease", icon: <AiOutlineClockCircle style={{ color: '#ed4f9d', fontSize: '1.5rem' }} /> },
+    { title: "Ad Spend", value: "$2,000", trend: "increase", icon: <AiOutlineDollarCircle style={{ color: '#38bdf8', fontSize: '1.5rem' }} /> },
+  ];
+
+  
+  const filteredCards = cards.filter(card =>
+    card.title.toLowerCase().includes(searchQuery.toLowerCase())
+  );
 
   return (
     <header className="header d-flex flex-column w-100">
@@ -23,7 +30,7 @@ const Header = () => {
           <p className="header-subtitle">Detailed information about your store</p>
         </div>
         <div className="header-right d-flex align-items-center">
-          <form onSubmit={handleSearch} className="search-form d-flex">
+          <form className="search-form d-flex">
             <div className="input-group">
               <span className="input-group-text" id="basic-addon1">
                 <FaSearch />
@@ -59,10 +66,19 @@ const Header = () => {
         </div>
       </div>
       <div className="dashboard-summary d-flex justify-content-around align-items-center bg-light" style={{ maxHeight: '200px', height: '100%', padding: '0rem' }}>
-        <DashboardCard title="Monthly Sales" value="$1,200" trend="increase" icon={<GiShoppingCart style={{ color: 'f6a723', fontSize: '1.5rem' }} />} />
-        <DashboardCard title="Total Revenue" value="$15,000" trend="decrease" icon={<FaDollarSign style={{ color: '2563eb', fontSize: '1.5rem' }} />} />
-        <DashboardCard title="Returns" value="$200" trend="decrease" icon={<AiOutlineClockCircle style={{ color: 'ed4f9d', fontSize: '1.5rem' }} />} />
-        <DashboardCard title="Ad Spend" value="$2,000" trend="increase" icon={<AiOutlineDollarCircle style={{ color: '38bdf8', fontSize: '1.5rem' }} />} />
+        {filteredCards.length > 0 ? (
+          filteredCards.map((card, index) => (
+            <DashboardCard 
+              key={index} 
+              title={card.title} 
+              value={card.value} 
+              trend={card.trend} 
+              icon={card.icon}
+            />
+          ))
+        ) : (
+          <p>No results found for "{searchQuery}"</p>
+        )}
       </div>
     </header>
   );
@@ -71,7 +87,7 @@ const Header = () => {
 const DashboardCard = ({ title, value, trend, icon }) => {
   const trendClass = trend === 'increase' ? 'text-success' : 'text-danger';
   const trendSymbol = trend === 'increase' ? '↑' : '↓';
-  
+
   return (
     <div className="card text-center" style={{ width: 'calc(100% / 4)', padding: '1rem', height: '100%', border: 'none' }}>
       <div className="d-flex justify-content-center align-items-center mb-2">

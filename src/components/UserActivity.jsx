@@ -29,6 +29,7 @@ const UserActivity = () => {
 
   const options = {
     responsive: true,
+    maintainAspectRatio: false, // This allows the chart to fill its container
     plugins: {
       legend: {
         display: true,
@@ -58,7 +59,7 @@ const UserActivity = () => {
   };
 
   return (
-    <div style={{ width: "100%", maxWidth: "800px", margin: "auto" }}>
+    <div style={{ width: "100%", maxWidth: "400px", height: "300px", margin: "auto" }}>
       <Bar
         data={{
           ...userActivityData,
