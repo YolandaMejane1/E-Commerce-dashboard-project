@@ -15,11 +15,11 @@ function Dashboard() {
       <main className="dashboard-content">
 
         <section className="overall-revenue-section">
-          <h2 className="section-title">Overall Revenue</h2>
         </section>
 
         <div className="charts-and-activity">
           <section className="revenue-chart-section">
+            <h6>Overall Revenue</h6>
             <h2 className="section-title">Revenue Chart</h2>
             <RevenueChart />
           </section>

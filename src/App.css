@@ -190,12 +190,14 @@ html, body {
   display: flex;
   flex-direction: column;
   margin-left: 250px;
+  height: 100vh;
 }
 
 .dashboard-content {
   display: flex;
   flex-direction: column;
   gap: 20px; 
+  height: 60vh;
 }
 
 .section-title {
