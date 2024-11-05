@@ -23,11 +23,11 @@ const LoginPage = () => {
 
   return (
     <div className="container-fluid flex h-screen p-0">
-      {/* Left section: visible on medium and larger screens */}
+      
       <div className="left-section d-none d-md-flex flex-column justify-center align-items-center text-white p-8">
         <h1 className="logo text-2xl font-bold"><FaBolt className="inline mr-2" />Hiphonic</h1>
         <div className="dashboard-preview">
-          <img src={dashboard} alt="dashboard" className="dashboard max-w-full h-auto" />
+          <img src={dashboard} alt="dashboard" className="dashboard max-w-xs h-auto" />
         </div>
         <p className="welcome-text text-xl font-semibold">Welcome to your Dashboard</p>
         <p className="subtext text-lg">Everything you need to manage your online store</p>

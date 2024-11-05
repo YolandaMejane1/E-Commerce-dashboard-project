@@ -1,5 +1,8 @@
 .header {
     background-color: #f8f9fa;
+    width: 100%;
+    height: auto;
+    padding-top: 0;
   }
   
   .header-title {
@@ -12,16 +15,62 @@
     color: #6c757d;
   }
   
-  .search-input {
+  .input-group {
     width: 200px;
   }
   
-  .notification-bell {
-    cursor: pointer;
+  .input-group-text {
+    background-color: transparent;
+    border: none;
+    color: lightgray;
+    padding: 0.5rem 0.75rem;
   }
   
-  .user-avatar {
-    cursor: pointer;
-    width: 35px;
-    height: 35px;
+  .input-group-text .fa-search {
+    color: lightgray;
+  }
+  
+  .search-input {
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    color: #6c757d;
+  }
+  
+  .search-input::placeholder {
+    color: lightgray;
+  }
+  
+  .search-input:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .dashboard-summary {
+    margin: 0;
+    padding: 20px;
+  }
+  
+
+  .card {
+    background-color: #f8f9fa; 
+    border-right: 1px solid #595a5c;
+    border-radius: 0.25rem;
+    height: 100%; 
+  }
+  
+  .card-value {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .text-success {
+    color: rgb(0, 161, 0); 
+  }
+  
+  .text-danger {
+    color: red; 
   }
