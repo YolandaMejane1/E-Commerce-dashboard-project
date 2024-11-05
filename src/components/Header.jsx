@@ -4,6 +4,7 @@ import { FaSearch, FaDollarSign } from 'react-icons/fa';
 import { GiShoppingCart } from 'react-icons/gi';
 import { AiOutlineDollarCircle, AiOutlineClockCircle } from 'react-icons/ai'; 
 import './Header.css';
+import UserImage from '../assets/pexels-jay-ybarra-1587808679-27383289.jpg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Header = () => {
@@ -42,11 +43,12 @@ const Header = () => {
           </div>
           <div className="user-menu dropdown">
             <img 
-              src="https://via.placeholder.com/35" 
+              src={UserImage} 
               alt="User Avatar" 
               className="user-avatar rounded-circle dropdown-toggle" 
               data-bs-toggle="dropdown" 
               aria-expanded="false" 
+              style={{ width: '35px', height: '35px'}}
             />
             <div className="dropdown-menu dropdown-menu-end">
               <p className="dropdown-item">Profile</p>

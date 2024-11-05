@@ -10,7 +10,7 @@ const ProductList = () => {
 
   return (
     <div className="product-list p-4">
-      <div className="flex justify-between mb-2 text-xs text-gray-500">
+      <div className="flex justify-between mb-2 text-xs text-gray-500" style={{ gap: '8px' }}>
         <span>Name</span>
         <span>Brand</span>
         <span>Stock</span>
