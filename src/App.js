@@ -11,10 +11,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        {/* Login Page Route */}
         <Route path="/" element={<LoginPage />} />
-        
-        {/* Dashboard Page Route */}
         <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </Router>
@@ -22,47 +19,50 @@ function App() {
 }
 
 const LoginPage = () => {
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
 
   return (
-    <div className="container">
-      <div className="left-section">
-        <h1 className="logo"><FaBolt style={{ marginRight: '4px' }} />Hiphonic</h1>
+    <div className="container-fluid flex h-screen p-0">
+      {/* Left section: visible on medium and larger screens */}
+      <div className="left-section d-none d-md-flex flex-column justify-center align-items-center text-white p-8">
+        <h1 className="logo text-2xl font-bold"><FaBolt className="inline mr-2" />Hiphonic</h1>
         <div className="dashboard-preview">
-          <img src={dashboard} alt="dashboard-image" className="dashboard" />
+          <img src={dashboard} alt="dashboard" className="dashboard max-w-full h-auto" />
         </div>
-        <p className="welcome-text">Welcome to your Dashboard</p>
-        <p className="subtext">Everything you need to manage your online store</p>
+        <p className="welcome-text text-xl font-semibold">Welcome to your Dashboard</p>
+        <p className="subtext text-lg">Everything you need to manage your online store</p>
       </div>
-      <div className="right-section">
-        <h2>Sign In to your Account</h2>
+      
+      {/* Right section: visible on all screens, left section hidden on small screens */}
+      <div className="right-section flex flex-column justify-center align-items-center p-8 bg-white">
+        <h2 className="text-2xl font-bold">Sign In to your Account</h2>
         <p>Welcome back! Please enter your details.</p>
-        <form className="login-form" onSubmit={(e) => {
-          e.preventDefault(); 
-          navigate('/dashboard'); 
+        <form className="login-form flex flex-col gap-4 w-full max-w-sm" onSubmit={(e) => {
+          e.preventDefault();
+          navigate('/dashboard');
         }}>
-          <input type="email" placeholder="Email" className="input-field" />
-          <input type="password" placeholder="Password" className="input-field" />
-          <div className="options">
+          <input type="email" placeholder="Email" className="input-field p-2 border border-gray-300 rounded-lg" />
+          <input type="password" placeholder="Password" className="input-field p-2 border border-gray-300 rounded-lg" />
+          <div className="options flex justify-between">
             <label>
               <input type="checkbox" /> Remember me
             </label>
-            <a href="#" className="forgot-password">Forgot Password?</a>
+            <a href="#" className="forgot-password text-blue-500">Forgot Password?</a>
           </div>
-          <button type="submit" className="sign-in-btn">Sign In</button> {/* Use button and submit */}
+          <button type="submit" className="sign-in-btn bg-blue-500 text-white py-2 rounded-lg">Sign In</button>
         </form>
-        <div className="social-login">
+        <div className="social-login text-center mt-4">
           <p>Or sign in with</p>
-          <button className="social-btn google">
-            <img src={googleLogo} alt="google logo" className="google-logo" />
+          <button className="social-btn google bg-gray-100 border border-gray-300 rounded-lg flex items-center justify-center py-2 mt-2">
+            <img src={googleLogo} alt="google logo" className="google-logo w-6 h-6 mr-2" />
             Google
           </button>
-          <button className="social-btn facebook">
-            <img src={facebookLogo} alt="facebook logo" className="facebook-logo" />
+          <button className="social-btn facebook bg-white border border-gray-300 rounded-lg flex items-center justify-center py-2 mt-2">
+            <img src={facebookLogo} alt="facebook logo" className="facebook-logo w-6 h-6 mr-2" />
             Facebook
           </button>
         </div>
-        <p className="sign-up">Don't have an account? <a href="#">Sign Up</a></p>
+        <p className="sign-up mt-4 text-sm">Don't have an account? <a href="#" className="text-blue-500">Sign Up</a></p>
       </div>
     </div>
   );

@@ -3,19 +3,26 @@
   font-weight: 400;
 }
 
-.container {
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.container-fluid {
   display: flex;
   height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0 !important;
 }
 
 .left-section {
   flex: 1;
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  margin: 0;
+  padding: 2rem;
+  position: relative;
   background: 
     radial-gradient(circle, #316CEC 0%, transparent 0%), 
     radial-gradient(circle, #4479EC 10%, #4479EC 30%, transparent 20%), 
@@ -24,13 +31,11 @@
     radial-gradient(circle, #2563EB 40%, #2563EB 100%, transparent 100%);
   z-index: -1;
   color: white;
-  padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  position: relative;
 }
 
 .right-section {
@@ -39,7 +44,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
 }
 
 .right-section h2 {
@@ -171,27 +175,4 @@
 .sign-up {
   margin-top: 1rem;
   font-size: 0.9rem;
-}
-
-.dashboard-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 100vh;
-  background-color: #e9ecef;
-}
-
-.dashboard-title {
-  font-size: 2.5rem;
-  margin: 20px 0;
-  color: #333;
-}
-
-.dashboard-content {
-  width: 80%;
-  padding: 20px;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }

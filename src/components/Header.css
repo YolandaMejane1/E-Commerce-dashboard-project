@@ -1,0 +1,27 @@
+.header {
+    background-color: #f8f9fa;
+  }
+  
+  .header-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .header-subtitle {
+    font-size: 0.9rem;
+    color: #6c757d;
+  }
+  
+  .search-input {
+    width: 200px;
+  }
+  
+  .notification-bell {
+    cursor: pointer;
+  }
+  
+  .user-avatar {
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+  }
