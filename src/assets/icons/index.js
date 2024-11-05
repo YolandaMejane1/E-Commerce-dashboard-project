@@ -7,6 +7,11 @@ import Logo from './logo.png';
 import Logout from './logout.png';
 import Settings from './settings.png';
 
+import iphone14 from './iphone14.webp';
+import iPadPro from './iPadPro.webp';
+import macbook from './macbook .webp';
+
+
 export {
     Analytics,
     Customers,
@@ -16,5 +21,8 @@ export {
     Logo,
     Logout,
     Settings, 
+    iphone14,
+    iPadPro,
+    macbook,
 }
 
