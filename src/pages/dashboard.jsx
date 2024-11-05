@@ -12,13 +12,11 @@ function Dashboard() {
   return (
     <div className="dashboard-container">
       <Header />
-      <main className="dashboard-content">
+      <main className="content">
 
-        <div className="charts-and-activity">
-          <section className="revenue-chart-section">
-            <h2 className="section-title">Revenue Chart</h2>
-            <RevenueChart />
-          </section>
+        <section className="statistics">
+          
+        </section>
 
           <section className="user-activity-section">
             <h2 className="section-title">User Activity</h2>
@@ -40,6 +38,8 @@ function Dashboard() {
 
       </main>
     </div>
+    
+
   );
 }
 

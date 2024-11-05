@@ -6,6 +6,8 @@ import facebookLogo from "./assets/Facebook_Logo_Primary.png";
 import googleLogo from "./assets/web_light_rd_na@2x.png";
 import Dashboard from './pages/dashboard.jsx';
 import { FaBolt } from 'react-icons/fa';
+import MenuSidebar from "./components/MenuSidebar.jsx";
+
 
 function App() {
   return (
