@@ -1,7 +1,6 @@
 import MenuSidebar from "../components/MenuSidebar";
 import '../App.css';
 import Header from "../components/Header";
-import OverallRevenue from "../components/OverallRevenue"; 
 import UserActivity from "../components/UserActivity"; 
 import TransactionHistory from "../components/TransactionHistory";
 import RevenueChart from "../components/RevenueChart";
