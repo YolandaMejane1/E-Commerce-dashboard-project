@@ -9,6 +9,7 @@ function Dashboard() {
   return (
     <div className="dashboard">
       <Header />
+      <MenuSidebar/>
       <main className="content">
 
         <section className="statistics">
@@ -28,6 +29,8 @@ function Dashboard() {
         </section>
       </main>
     </div>
+    
+
   );
 }
 
