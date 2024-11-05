@@ -13,11 +13,6 @@ export const revenueData = {
     ],
   };
 
-export const productData = [
-    { id: 1, name: "Apple iPhone 14", stock: 25, sales: 15, price: 799.99, image: "iphone14.jpg" },
-    { id: 2, name: "Apple MacBook Air M2", stock: 10, sales: 5, price: 999.99, image: "macbookair.jpg" },
-    { id: 3, name: "Apple iPad Pro", stock: 30, sales: 20, price: 999.99, image: "ipadpro.jpg" },
-];
 
   export const userActivityData = {
     labels: ["M", "T", "W", "T", "F", "S", "S"],
