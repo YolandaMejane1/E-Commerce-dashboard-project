@@ -1,7 +1,7 @@
 import MenuSidebar from "../components/MenuSidebar";
 import '../App.css';
 import Header from "../components/Header";
-import OverallRevenue from "../components/RevenueChart"; 
+import OverallRevenue from "../components/OverallRevenue"; 
 import UserActivity from "../components/UserActivity"; 
 import TransactionHistory from "../components/TransactionHistory";
 import RevenueChart from "../components/RevenueChart";
@@ -12,12 +12,17 @@ function Dashboard() {
   return (
     <div className="dashboard-container">
       <Header />
-      <main className="content">
+      <main className="dashboard-content">
 
-        <section className="statistics">
-          
+        <section className="overall-revenue-section">
+          <h2 className="section-title">Overall Revenue</h2>
         </section>
 
+        <div className="charts-and-activity">
+          <section className="revenue-chart-section">
+            <h2 className="section-title">Revenue Chart</h2>
+            <RevenueChart />
+          </section>
           <section className="user-activity-section">
             <h2 className="section-title">User Activity</h2>
             <UserActivity />
@@ -29,7 +34,6 @@ function Dashboard() {
             <h2 className="section-title">Product List</h2>
             <ProductList />
           </section>
-
           <section className="transaction-history-section">
             <h2 className="section-title">Transaction History</h2>
             <TransactionHistory />
@@ -38,8 +42,6 @@ function Dashboard() {
 
       </main>
     </div>
-    
-
   );
 }
 
