@@ -210,6 +210,8 @@ html, body {
 .products-and-transactions {
   display: flex;
   gap: 20px; 
+  width: 100%;
+  height: auto;
 }
 
 .revenue-chart-section,
@@ -220,8 +222,11 @@ html, body {
   padding: 20px;
   border: 1px solid #ccc; 
   border-radius: 5px; 
-  background-color: #f9f9f9; 
+  background-color: #f9f9f9;
+  width: 100%; 
+  height: auto;
 }
+
 
 .App {
   display: flex;
