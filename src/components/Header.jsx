@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { MdOutlineNotifications } from 'react-icons/md'; 
 import { FaSearch, FaDollarSign } from 'react-icons/fa'; 
 import { GiShoppingCart } from 'react-icons/gi';
-import { AiOutlineDollarCircle, AiOutlineClockCircle } from 'react-icons/ai'; // Importing outlined icons
+import { AiOutlineDollarCircle, AiOutlineClockCircle } from 'react-icons/ai'; 
 import './Header.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
