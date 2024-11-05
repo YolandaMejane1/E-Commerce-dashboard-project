@@ -5,7 +5,6 @@ import { ProductData } from './ProductData';
 const ProductList = () => {
   return (
     <div id="scart">
-      <br /><br /><br />
       <div className="container">
         <div className="row mb-5">
           <form className="col-md-12" method="post">
@@ -25,13 +24,13 @@ const ProductList = () => {
                 {ProductData.map((product) => (
                   <tr key={product.id}>
                     <td><input type="checkbox" /></td>
-                    <td><img src={product.icon } alt={product.name} /> {product.name}</td>
+                    <td><img src={product.icon } alt={product.name} style={{ width: '20px', height: '20px', borderRadius: '50%'}} /> {product.name}</td>
                     <td>{product.brand}</td>
                     <td>{product.stock}</td>
                     <td>{product.sales}</td>
                     <td>{product.price}</td>
                     <td>
-                      {/* Add your options here */}
+                      
                       <button></button>
                     </td>
                   </tr>

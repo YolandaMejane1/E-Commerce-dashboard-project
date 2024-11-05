@@ -9,7 +9,7 @@ import Settings from './settings.png';
 
 import iphone14 from './iphone14.webp';
 import iPadPro from './iPadPro.webp';
-import macbook from './macbook .webp';
+import macbook from './macbook.webp';
 
 
 export {
